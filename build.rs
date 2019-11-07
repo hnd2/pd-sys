@@ -26,7 +26,6 @@ fn main() {
         .clang_arg("-Ilibpd/libpd_wrapper")
         .clang_arg("-Ilibpd/pure-data/src")
         .header("wrapper.h")
-        //.parse_callbacks(Box::new(bindgen::CargoCallbacks))
         .generate()
         .expect("Unable to generate bindings");
 
